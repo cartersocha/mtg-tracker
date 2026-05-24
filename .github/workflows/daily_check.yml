@@ -1,0 +1,37 @@
+# .github/workflows/daily_check.yml
+name: Daily MTG Price Check
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 14:00 UTC = 7am PT / 10am ET
+  workflow_dispatch:         # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write            # Required to commit state files back to repo
+
+jobs:
+  check-prices:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run price check
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/run.py
+
+      - name: Commit updated state files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/price_history.json data/alert_state.json data/.bootstrapped
+          git diff --staged --quiet || git commit -m "chore: daily price update [skip ci]"
+          git push
