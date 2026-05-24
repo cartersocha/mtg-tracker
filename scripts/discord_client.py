@@ -44,6 +44,8 @@ def build_embed(alert: Alert) -> dict:
 
     # Trigger description
     if alert.trigger_type == "manual":
+        if alert.target is None:
+            raise ValueError(f"Alert for '{alert.card_name}' has trigger_type='manual' but target is None")
         desc = f"Dropped to ${alert.current_price:.2f} — at or below your target of ${alert.target:.2f}"
     elif alert.trigger_type == "pct_drop":
         desc = (
