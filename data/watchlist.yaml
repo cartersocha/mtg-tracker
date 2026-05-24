@@ -1,0 +1,571 @@
+# MTG Price Alert Watchlist
+# Pulled from all three precon upgrade guides: Explorers of the Deep (Hakbal),
+# Ahoy Mateys (Admiral Brass), and Riders of Rohan (Éowyn).
+# Only cards with a research price above $2 are tracked.
+#
+# Deck codes:
+#   Explorers = Explorers of the Deep (Simic Merfolk, Hakbal)
+#   Ahoy      = Ahoy Mateys (Grixis Pirates, Admiral Brass)
+#   Rohan     = Riders of Rohan (Jeskai Humans, Éowyn)
+#
+# Tier meanings:
+#   1 = ~$50 upgrade tier
+#   2 = ~$125 upgrade tier (additive)
+#   3 = ~$200 upgrade tier (additive)
+#   4 = No-budget
+#
+# Per-card:
+#   decks:          deck code → tier the card first appears in for that deck
+#   target_nonfoil: alert when cheapest non-foil across all printings hits this USD price
+#   target_foil:    alert when cheapest foil across all printings hits this USD price
+#   Leave targets as null until you have a buy opinion.
+
+cards:
+
+  # ─── MULTI-DECK ───────────────────────────────────────────────────────────
+
+  - name: "Roaming Throne"
+    # Research: ~$46 non-foil
+    # Doubles all tribal triggers — T2 add for Explorers and Ahoy
+    decks:
+      Explorers: 2
+      Ahoy: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Cavern of Souls"
+    # Research: ~$46 non-foil (buy LCI reprint)
+    # Uncounterable tribal spells — T3 for all three decks
+    decks:
+      Explorers: 3
+      Ahoy: 3
+      Rohan: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Cyclonic Rift"
+    # Research: ~$33 non-foil
+    # One-sided board wipe — T2 for Explorers and Ahoy
+    decks:
+      Explorers: 2
+      Ahoy: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Kindred Discovery"
+    # Research: ~$6 non-foil
+    # T1 for Ahoy and Rohan; T3 for Explorers (already has draw)
+    decks:
+      Explorers: 3
+      Ahoy: 1
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Mana Crypt"
+    # Research: ~$165 non-foil (VOLATILE — no-budget only)
+    decks:
+      Explorers: 4
+      Ahoy: 4
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Jeweled Lotus"
+    # Research: ~$80 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+      Ahoy: 4
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Force of Will"
+    # Research: ~$90 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Fierce Guardianship"
+    # Research: ~$35 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Deflecting Swat"
+    # Research: ~$18 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Underground Sea"
+    # Research: ~$400+ non-foil (no-budget only)
+    decks:
+      Explorers: 4
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Scalding Tarn"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  # ─── EXPLORERS OF THE DEEP ────────────────────────────────────────────────
+
+  - name: "Vodalian Hexcatcher"
+    # Research: ~$4 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Lord of Atlantis"
+    # Research: ~$6 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Beast Whisperer"
+    # Research: ~$4 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Growing Rites of Itlimoc"
+    # Research: ~$7 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Swan Song"
+    # Research: ~$9 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Heroic Intervention"
+    # Research: ~$13 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Oracle of Mul Daya"
+    # Research: ~$15 non-foil
+    decks:
+      Explorers: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Otawara, Soaring City"
+    # Research: ~$15 non-foil
+    decks:
+      Explorers: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Seedborn Muse"
+    # Research: ~$15 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Intruder Alarm"
+    # Research: ~$12 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Concordant Crossroads"
+    # Research: ~$25 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Pact of Negation"
+    # Research: ~$25 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Exploration"
+    # Research: ~$20 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Thassa's Oracle"
+    # Research: ~$22 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Demonic Consultation"
+    # Research: ~$8 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Misty Rainforest"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Tropical Island"
+    # Research: ~$300+ non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Gaea's Cradle"
+    # Research: ~$500+ non-foil (no-budget only)
+    decks:
+      Explorers: 4
+    target_nonfoil: null
+    target_foil: null
+
+  # ─── AHOY MATEYS ──────────────────────────────────────────────────────────
+
+  - name: "Malcolm, Alluring Scoundrel"
+    # Research: ~$4 non-foil
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Glint-Horn Buccaneer"
+    # Research: ~$6 non-foil
+    # Key combo piece: Glint-Horn + Malcolm = infinite damage
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Ashnod's Altar"
+    # Research: ~$5 non-foil
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Brass's Tunnel-Grinder"
+    # Research: ~$2 non-foil (DFC — front face is tracked)
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Ragavan, Nimble Pilferer"
+    # Research: ~$48 non-foil (Tier 2 — powerful Grixis value engine)
+    decks:
+      Ahoy: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Buried Alive"
+    # Research: ~$2 non-foil
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Crafty Cutpurse"
+    # Research: ~$3 non-foil
+    # Steals every token an opponent makes on their turn
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Titan of Littjara"
+    # Research: ~$2 non-foil
+    decks:
+      Ahoy: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Pirated Copy"
+    # Research: ~$19 non-foil
+    decks:
+      Ahoy: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Dockside Extortionist"
+    # Research: ~$16 non-foil (VOLATILE — tracked unban speculation spikes)
+    decks:
+      Ahoy: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Coat of Arms"
+    # Research: ~$17 non-foil (no-budget non-budget upgrade list)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Necromancy"
+    # Research: ~$10 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Phyrexian Altar"
+    # Research: ~$50 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Imperial Seal"
+    # Research: ~$90 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Vampiric Tutor"
+    # Research: ~$35 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Demonic Tutor"
+    # Research: ~$18 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Reanimate"
+    # Research: ~$4 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Animate Dead"
+    # Research: ~$4 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Badlands"
+    # Research: ~$200+ non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Volcanic Island"
+    # Research: ~$200+ non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Polluted Delta"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Bloodstained Mire"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Ahoy: 4
+    target_nonfoil: null
+    target_foil: null
+
+  # ─── RIDERS OF ROHAN ──────────────────────────────────────────────────────
+
+  - name: "Boromir, Warden of the Tower"
+    # Research: ~$3 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Cathars' Crusade"
+    # Research: ~$4 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Adeline, Resplendent Cathar"
+    # Research: ~$5 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Sword of the Animist"
+    # Research: ~$4 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Hero of Bladehold"
+    # Research: ~$7 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Skullclamp"
+    # Research: ~$2 non-foil
+    decks:
+      Rohan: 1
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Smothering Tithe"
+    # Research: ~$57 non-foil (Game Changer — pushes to Bracket 4)
+    decks:
+      Rohan: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Anointed Procession"
+    # Research: ~$54 non-foil (bracket-safe alternative to Smothering Tithe)
+    decks:
+      Rohan: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Aurelia, the Warleader"
+    # Research: ~$8 non-foil
+    decks:
+      Rohan: 2
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Flowering of the White Tree"
+    # Research: ~$8 non-foil
+    decks:
+      Rohan: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Scourge of the Throne"
+    # Research: ~$5 non-foil
+    decks:
+      Rohan: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Loran of the Third Path"
+    # Research: ~$3 non-foil
+    # Artifact/enchantment removal on a human body
+    decks:
+      Rohan: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Akroma's Will"
+    # Research: ~$8 non-foil
+    decks:
+      Rohan: 3
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Aggravated Assault"
+    # Research: ~$50 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Strionic Resonator"
+    # Research: ~$5 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Reconnaissance"
+    # Research: ~$18 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Champion of the Parish"
+    # Research: ~$4 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Sacred Foundry"
+    # Research: ~$35 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Hallowed Fountain"
+    # Research: ~$35 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Ancient Tomb"
+    # Research: ~$120 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Plateau"
+    # Research: ~$250+ non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Flooded Strand"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
+
+  - name: "Arid Mesa"
+    # Research: ~$30 non-foil (no-budget only)
+    decks:
+      Rohan: 4
+    target_nonfoil: null
+    target_foil: null
