@@ -308,20 +308,6 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Pirated Copy"
-    # Research: ~$19 non-foil
-    decks:
-      Ahoy: 3
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Dockside Extortionist"
-    # Research: ~$16 non-foil (VOLATILE — tracked unban speculation spikes)
-    decks:
-      Ahoy: 3
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Coat of Arms"
     # Research: ~$17 non-foil (no-budget non-budget upgrade list)
     decks:
