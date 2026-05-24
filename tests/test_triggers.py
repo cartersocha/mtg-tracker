@@ -45,7 +45,7 @@ class TestPctDrop:
         history = make_history(6, 60.00, 40.00)
         fired, msg = check_pct_drop(40.00, history, threshold_pct=15, lookback_days=30)
         assert fired is False
-        assert "insufficient" in msg.lower()
+        assert "insufficient" in msg.get("skip_reason", "").lower()
 
     def test_uses_oldest_available_when_lookback_exceeds_history(self):
         history = make_history(15, 60.00, 45.00)

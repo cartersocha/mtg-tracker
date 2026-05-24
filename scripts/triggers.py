@@ -27,7 +27,7 @@ def check_pct_drop(
     Requires at least 7 days of history.
     """
     if len(history) < 7:
-        return False, "insufficient history (< 7 days)"
+        return False, {"skip_reason": "insufficient history (< 7 days)"}
 
     sorted_dates = sorted(history.keys())
     today = date.today()
