@@ -50,8 +50,11 @@ def load_config() -> tuple[list[dict], dict]:
 
 
 def _sort_key(alert: Alert) -> float:
-    """Sort alerts by magnitude descending. Higher = more urgent."""
+    """Sort alerts by urgency descending (higher return = shown first in Discord)."""
     if alert.pct_change is not None:
+        # near_52w_low: pct_change = % above the low; 0% above = most urgent → invert
+        if alert.trigger_type == "near_52w_low":
+            return -alert.pct_change
         return alert.pct_change
     if alert.trigger_type == "manual" and alert.target and alert.current_price:
         return (alert.target - alert.current_price) / alert.target * 100
