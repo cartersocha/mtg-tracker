@@ -228,13 +228,6 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Gaea's Cradle"
-    # Research: ~$500+ non-foil (no-budget only)
-    decks:
-      Explorers: 4
-    target_nonfoil: null
-    target_foil: null
-
   # ─── AHOY MATEYS ──────────────────────────────────────────────────────────
 
   - name: "Glint-Horn Buccaneer"
