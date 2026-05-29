@@ -114,7 +114,7 @@
   "Aurelia, the Warleader": {
     "foil": {
       "manual": 17.97,
-      "near_52w_low": 17.97,
+      "near_52w_low": 17.85,
       "pct_drop": 17.97,
       "pct_off_52w_high": 17.97
     },
@@ -156,7 +156,7 @@
   "Bloodstained Mire": {
     "foil": {
       "manual": 18.57,
-      "near_52w_low": 18.57,
+      "near_52w_low": 18.37,
       "pct_drop": 18.57,
       "pct_off_52w_high": 18.57
     },
@@ -338,9 +338,9 @@
   "Demonic Tutor": {
     "foil": {
       "manual": 24.41,
-      "near_52w_low": 24.41,
-      "pct_drop": 24.41,
-      "pct_off_52w_high": 24.41
+      "near_52w_low": 24.26,
+      "pct_drop": 24.26,
+      "pct_off_52w_high": 24.26
     },
     "nonfoil": {
       "manual": 22.61,
@@ -358,7 +358,7 @@
     },
     "nonfoil": {
       "manual": 29.37,
-      "near_52w_low": 29.37,
+      "near_52w_low": 28.9,
       "pct_drop": 29.37,
       "pct_off_52w_high": 29.37
     }
@@ -422,8 +422,8 @@
   "Gaea's Cradle": {
     "foil": {
       "manual": 2949.0,
-      "near_52w_low": 2949.0,
-      "pct_drop": 2949.0,
+      "near_52w_low": 2247.0,
+      "pct_drop": 2247.0,
       "pct_off_52w_high": 2949.0
     },
     "nonfoil": {
@@ -436,7 +436,7 @@
   "Glint-Horn Buccaneer": {
     "foil": {
       "manual": 12.13,
-      "near_52w_low": 12.13,
+      "near_52w_low": 10.83,
       "pct_drop": 12.13,
       "pct_off_52w_high": 12.13
     },
@@ -512,7 +512,7 @@
     },
     "nonfoil": {
       "manual": 158.89,
-      "near_52w_low": 158.89,
+      "near_52w_low": 156.59,
       "pct_drop": 158.89,
       "pct_off_52w_high": 158.89
     }
@@ -542,7 +542,7 @@
       "manual": 44.65,
       "near_52w_low": 44.65,
       "pct_drop": 44.65,
-      "pct_off_52w_high": 44.65
+      "pct_off_52w_high": 44.42
     }
   },
   "Kindred Discovery": {
@@ -604,7 +604,7 @@
   "Mana Crypt": {
     "foil": {
       "manual": 64.12,
-      "near_52w_low": 64.12,
+      "near_52w_low": 64.08,
       "pct_drop": 64.12,
       "pct_off_52w_high": 64.12
     },
@@ -613,6 +613,20 @@
       "near_52w_low": 40.53,
       "pct_drop": 40.53,
       "pct_off_52w_high": 40.53
+    }
+  },
+  "Merrow Commerce": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": null,
+      "near_52w_low": 18.09,
+      "pct_drop": null,
+      "pct_off_52w_high": null
     }
   },
   "Misty Rainforest": {
@@ -680,7 +694,7 @@
     },
     "nonfoil": {
       "manual": 15.64,
-      "near_52w_low": 15.64,
+      "near_52w_low": 15.59,
       "pct_drop": 15.64,
       "pct_off_52w_high": 15.64
     }
@@ -722,7 +736,7 @@
     },
     "nonfoil": {
       "manual": 19.16,
-      "near_52w_low": 19.16,
+      "near_52w_low": 18.76,
       "pct_drop": 19.16,
       "pct_off_52w_high": 19.16
     }
@@ -744,27 +758,27 @@
   "Reanimate": {
     "foil": {
       "manual": 4.66,
-      "near_52w_low": 4.66,
-      "pct_drop": 4.66,
-      "pct_off_52w_high": 4.66
+      "near_52w_low": 4.32,
+      "pct_drop": 4.32,
+      "pct_off_52w_high": 4.32
     },
     "nonfoil": {
       "manual": 3.97,
-      "near_52w_low": 3.97,
-      "pct_drop": 3.97,
-      "pct_off_52w_high": 3.97
+      "near_52w_low": 3.16,
+      "pct_drop": 3.16,
+      "pct_off_52w_high": 3.16
     }
   },
   "Reconnaissance": {
     "foil": {
       "manual": 5.67,
-      "near_52w_low": 5.67,
+      "near_52w_low": 5.42,
       "pct_drop": 5.67,
       "pct_off_52w_high": 5.67
     },
     "nonfoil": {
       "manual": 4.93,
-      "near_52w_low": 4.93,
+      "near_52w_low": 4.77,
       "pct_drop": 4.93,
       "pct_off_52w_high": 4.93
     }
@@ -870,7 +884,7 @@
   "Strionic Resonator": {
     "foil": {
       "manual": 12.49,
-      "near_52w_low": 12.49,
+      "near_52w_low": 12.32,
       "pct_drop": 12.49,
       "pct_off_52w_high": 12.49
     },
@@ -898,7 +912,7 @@
   "Sword of the Animist": {
     "foil": {
       "manual": 8.66,
-      "near_52w_low": 8.66,
+      "near_52w_low": 8.59,
       "pct_drop": 8.66,
       "pct_off_52w_high": 8.66
     },
@@ -932,7 +946,7 @@
     },
     "nonfoil": {
       "manual": 6.01,
-      "near_52w_low": 6.01,
+      "near_52w_low": 5.98,
       "pct_drop": 6.01,
       "pct_off_52w_high": 6.01
     }
