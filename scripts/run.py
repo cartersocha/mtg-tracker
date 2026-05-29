@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
+from dotenv import load_dotenv
 
 from bootstrap import bootstrap_if_needed
 from discord_client import Alert, send_alerts
@@ -62,6 +63,7 @@ def _sort_key(alert: Alert) -> float:
 
 
 def run(dry_run: bool = False) -> int:
+    load_dotenv()  # local .env; no-op in CI where the var comes from secrets
     today = date.today().isoformat()
 
     # ── Load config ───────────────────────────────────────────────────────────
