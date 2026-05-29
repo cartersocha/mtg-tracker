@@ -1,21 +1,17 @@
 # MTG Price Alert Watchlist
-# Pulled from all three precon upgrade guides: Explorers of the Deep (Hakbal),
-# Ahoy Mateys (Admiral Brass), and Riders of Rohan (Éowyn).
-# Only cards with a research price above $2 are tracked.
+# Carter's personal tracking list — the specific cards he wants to buy or watch
+# (curated from his Manapool list). The daily job alerts when any of these hit
+# a deal threshold. Add or remove cards freely; this is not tied to any guide.
 #
-# Deck codes:
+# The decks/tier fields below are legacy context from the original precon
+# upgrade guides (Explorers of the Deep / Ahoy Mateys / Riders of Rohan) and
+# just annotate which deck a card was first wanted for. They don't affect alerts.
 #   Explorers = Explorers of the Deep (Simic Merfolk, Hakbal)
 #   Ahoy      = Ahoy Mateys (Grixis Pirates, Admiral Brass)
 #   Rohan     = Riders of Rohan (Jeskai Humans, Éowyn)
 #
-# Tier meanings:
-#   1 = ~$50 upgrade tier
-#   2 = ~$125 upgrade tier (additive)
-#   3 = ~$200 upgrade tier (additive)
-#   4 = No-budget
-#
 # Per-card:
-#   decks:          deck code → tier the card first appears in for that deck
+#   decks:          (optional) deck code → tier annotation; informational only
 #   target_nonfoil: alert when cheapest non-foil across all printings hits this USD price
 #   target_foil:    alert when cheapest foil across all printings hits this USD price
 #   Leave targets as null until you have a buy opinion.
