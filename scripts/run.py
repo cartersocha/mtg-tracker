@@ -9,7 +9,6 @@ import argparse
 import os
 import sys
 from datetime import date
-from pathlib import Path
 from typing import Optional
 
 import yaml
@@ -17,10 +16,9 @@ from dotenv import load_dotenv
 
 from bootstrap import bootstrap_if_needed
 from discord_client import Alert, send_alerts
+from paths import SETTINGS_PATH, WATCHLIST_PATH
 from scryfall import get_cheapest_prices
 from state import (
-    DEFAULT_ALERT_STATE_PATH,
-    DEFAULT_PRICE_HISTORY_PATH,
     append_price,
     get_card_history,
     init_alert_state_for_card,
@@ -31,15 +29,13 @@ from state import (
     save_price_history,
 )
 from triggers import (
+    TRIGGER_NAMES,
     apply_rearm,
     check_manual_target,
     check_near_52w_low,
     check_pct_drop,
     check_pct_off_52w_high,
 )
-
-WATCHLIST_PATH = Path("data/watchlist.yaml")
-SETTINGS_PATH = Path("data/settings.yaml")
 
 
 def load_config() -> tuple[list[dict], dict]:
@@ -113,8 +109,7 @@ def run(dry_run: bool = False) -> int:
     history = prune_history(history, days=365)
 
     if dry_run:
-        print(f"[DRY RUN] Loading price history (365 days bootstrapped)...")
-        print(f"[DRY RUN] Running trigger checks...\n")
+        print("[DRY RUN] Running trigger checks...\n")
 
     # ── Evaluate triggers ─────────────────────────────────────────────────────
     fired_alerts: list[Alert] = []
@@ -135,7 +130,7 @@ def run(dry_run: bool = False) -> int:
             if dry_run:
                 print(f"  {name} ({foil_type}, ${current_price:.2f})")
 
-            for trigger_name in ("manual", "pct_drop", "pct_off_52w_high", "near_52w_low"):
+            for trigger_name in TRIGGER_NAMES:
                 condition_met = False
                 alert_kwargs: dict = {"history_days": history_days}
                 skip_msg: Optional[str] = None

@@ -20,7 +20,7 @@ from pathlib import Path
 
 import yaml
 
-WATCHLIST_PATH = Path("data/watchlist.yaml")
+from paths import WATCHLIST_PATH
 
 # Pattern: "Alternate Display Name (Canonical Card Name)"
 CANONICAL_PAREN = re.compile(r'^.+\((.+)\)\s*$')

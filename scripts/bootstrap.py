@@ -5,13 +5,9 @@ The sentinel file data/.bootstrapped prevents re-downloading on subsequent runs.
 """
 from pathlib import Path
 
-import yaml
-
 from mtgjson import download_and_parse_gz, get_historical_prices_for_card, ALLPRINTINGS_URL, ALLPRICES_URL
+from paths import SENTINEL_PATH
 from state import load_price_history, save_price_history, DEFAULT_PRICE_HISTORY_PATH
-
-SENTINEL_PATH = Path("data/.bootstrapped")
-WATCHLIST_PATH = Path("data/watchlist.yaml")
 
 
 def _bootstrap_cards(
@@ -19,7 +15,7 @@ def _bootstrap_cards(
     history_path: Path = DEFAULT_PRICE_HISTORY_PATH,
 ) -> None:
     """Download MTGJSON and seed price history for the given card names."""
-    print(f"[INFO] Downloading MTGJSON data (this may take ~5 minutes on first run)...")
+    print("[INFO] Downloading MTGJSON data (this may take ~5 minutes on first run)...")
     all_printings = download_and_parse_gz(ALLPRINTINGS_URL)
     all_prices = download_and_parse_gz(ALLPRICES_URL)
 

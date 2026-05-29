@@ -8,6 +8,8 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Optional
 
+from triggers import FOIL_TYPES, TRIGGER_NAMES
+
 DEFAULT_PRICE_HISTORY_PATH = Path("data/price_history.json")
 DEFAULT_ALERT_STATE_PATH = Path("data/alert_state.json")
 
@@ -80,17 +82,6 @@ def init_alert_state_for_card(state: dict, card_name: str) -> dict:
     """Add a card to alert state with all-null triggers if not already present."""
     if card_name not in state:
         state[card_name] = {
-            "nonfoil": {
-                "manual": None,
-                "pct_drop": None,
-                "pct_off_52w_high": None,
-                "near_52w_low": None,
-            },
-            "foil": {
-                "manual": None,
-                "pct_drop": None,
-                "pct_off_52w_high": None,
-                "near_52w_low": None,
-            },
+            ft: {t: None for t in TRIGGER_NAMES} for ft in FOIL_TYPES
         }
     return state

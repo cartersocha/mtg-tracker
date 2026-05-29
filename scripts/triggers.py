@@ -6,6 +6,11 @@ All functions are pure — no I/O, no side effects.
 from datetime import date, timedelta
 from typing import Optional
 
+# Canonical trigger identity — single source of truth for the set of triggers
+# and foil types, reused by alert-state init (state.py) and the run loop.
+TRIGGER_NAMES = ("manual", "pct_drop", "pct_off_52w_high", "near_52w_low")
+FOIL_TYPES = ("nonfoil", "foil")
+
 
 def check_manual_target(current_price: float, target: Optional[float]) -> bool:
     """Returns True if current_price is at or below target."""
@@ -34,10 +39,7 @@ def check_pct_drop(
     target_date = (today - timedelta(days=lookback_days)).isoformat()
 
     older_dates = [d for d in sorted_dates if d <= target_date]
-    if older_dates:
-        ref_date = older_dates[-1]
-    else:
-        ref_date = sorted_dates[0]
+    ref_date = older_dates[-1] if older_dates else sorted_dates[0]
 
     past_price = history[ref_date]
     actual_days = (today - date.fromisoformat(ref_date)).days
@@ -52,9 +54,7 @@ def check_pct_drop(
         "pct_change": pct_change,
     }
 
-    if pct_change >= threshold_pct:
-        return True, details
-    return False, details
+    return pct_change >= threshold_pct, details
 
 
 def check_pct_off_52w_high(
@@ -78,9 +78,7 @@ def check_pct_off_52w_high(
     pct_off = (high_52w - current_price) / high_52w * 100
     details = {"high_52w": high_52w, "pct_change": pct_off}
 
-    if pct_off >= threshold_pct:
-        return True, details
-    return False, details
+    return pct_off >= threshold_pct, details
 
 
 def check_near_52w_low(
@@ -104,9 +102,7 @@ def check_near_52w_low(
     pct_above = (current_price - low_52w) / low_52w * 100
     details = {"low_52w": low_52w, "pct_change": pct_above}
 
-    if pct_above <= threshold_pct:
-        return True, details
-    return False, details
+    return pct_above <= threshold_pct, details
 
 
 def apply_rearm(

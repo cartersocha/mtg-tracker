@@ -85,7 +85,7 @@ def download_and_parse_gz(url: str) -> dict:
             return json.load(f)
     finally:
         os.unlink(tmp_path)
-        print(f"[INFO] Temp file deleted.")
+        print("[INFO] Temp file deleted.")
 
 
 def get_historical_prices_for_card(

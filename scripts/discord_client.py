@@ -3,7 +3,7 @@
 Discord embed builder and webhook sender.
 Builds one embed per alert; chunks into messages of max 10 embeds.
 """
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import date
 from typing import Optional
 
@@ -14,6 +14,13 @@ TRIGGER_COLORS = {
     "near_52w_low": 0x00FF00,
     "pct_drop": 0xFFAA00,
     "pct_off_52w_high": 0xFF4444,
+}
+
+# Per-trigger extra detail field for the embed: trigger -> (label, Alert attr)
+TRIGGER_EXTRA_FIELD = {
+    "pct_off_52w_high": ("52w High", "high_52w"),
+    "near_52w_low": ("52w Low", "low_52w"),
+    "manual": ("Target", "target"),
 }
 
 
@@ -39,7 +46,7 @@ def _format_decks(decks: dict) -> str:
 
 def build_embed(alert: Alert) -> dict:
     """Build a single Discord embed dict for one alert."""
-    today_str = date.today().strftime("%Y-%m-%d")
+    today_str = date.today().isoformat()
     foil_label = "Foil" if alert.foil_type == "foil" else "Non-foil"
 
     # Trigger description
@@ -63,12 +70,12 @@ def build_embed(alert: Alert) -> dict:
         {"name": "Price",   "value": f"${alert.current_price:.2f}", "inline": True},
     ]
 
-    if alert.trigger_type == "pct_off_52w_high" and alert.high_52w is not None:
-        fields.append({"name": "52w High", "value": f"${alert.high_52w:.2f}", "inline": True})
-    if alert.trigger_type == "near_52w_low" and alert.low_52w is not None:
-        fields.append({"name": "52w Low", "value": f"${alert.low_52w:.2f}", "inline": True})
-    if alert.trigger_type == "manual" and alert.target is not None:
-        fields.append({"name": "Target", "value": f"${alert.target:.2f}", "inline": True})
+    extra = TRIGGER_EXTRA_FIELD.get(alert.trigger_type)
+    if extra:
+        label, attr = extra
+        value = getattr(alert, attr)
+        if value is not None:
+            fields.append({"name": label, "value": f"${value:.2f}", "inline": True})
 
     footer_text = f"MTG Price Alert • {today_str}"
     if (
@@ -110,7 +117,7 @@ def send_test_message(webhook_url: str) -> None:
     Layer 4 validation: send one test embed + a fabricated 15-alert batch.
     The 15-alert batch verifies chunking (should arrive as 2 Discord messages).
     """
-    today_str = date.today().strftime("%Y-%m-%d")
+    today_str = date.today().isoformat()
 
     # Single test embed
     test_embed = {
