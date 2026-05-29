@@ -1,6 +1,7 @@
 # tests/test_scryfall.py
 """Unit tests for scryfall printing-matching (no network)."""
-from scryfall import _printing_matches
+import scryfall
+from scryfall import _printing_matches, get_cheapest_prices
 
 
 def test_standalone_card_matches():
@@ -50,3 +51,50 @@ def test_split_card_front_included():
 def test_unrelated_card_excluded():
     card = {"name": "Counterspell"}
     assert _printing_matches(card, "Reanimate") is False
+
+
+def test_get_cheapest_prices_excludes_back_face_dfc(monkeypatch):
+    """End-to-end: a cheaper back-face DFC must NOT pull down the cheapest price.
+
+    This locks in the real bug symptom: searching "Reanimate" returns both the
+    standalone sorcery ($7.46) and "Grave Researcher // Reanimate" ($3.16, the
+    DFC). The DFC must be excluded so the reported cheapest is the real card.
+    """
+    printings = [
+        {"name": "Reanimate", "prices": {"usd": "7.46", "usd_foil": "13.34"}},
+        {  # Secrets of Strixhaven DFC — Reanimate is the BACK face
+            "name": "Grave Researcher // Reanimate",
+            "prices": {"usd": "3.16", "usd_foil": "4.32"},
+            "card_faces": [
+                {"name": "Grave Researcher", "prices": {"usd": "3.16"}},
+                {"name": "Reanimate", "prices": {}},
+            ],
+        },
+    ]
+    # Stub network: name-resolution check and printing fetch
+    monkeypatch.setattr(scryfall, "_get", lambda *a, **k: {})
+    monkeypatch.setattr(scryfall, "get_all_printings", lambda name: printings)
+
+    nf, ff = get_cheapest_prices("Reanimate")
+    assert nf == 7.46  # NOT 3.16 — the DFC was excluded
+    assert ff == 13.34  # NOT 4.32
+
+
+def test_get_cheapest_prices_front_face_dfc_included(monkeypatch):
+    """Front-face DFC tracking still resolves (Growing Rites of Itlimoc)."""
+    printings = [
+        {
+            "name": "Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun",
+            "prices": {"usd": "7.80", "usd_foil": "7.82"},
+            "card_faces": [
+                {"name": "Growing Rites of Itlimoc"},
+                {"name": "Itlimoc, Cradle of the Sun"},
+            ],
+        }
+    ]
+    monkeypatch.setattr(scryfall, "_get", lambda *a, **k: {})
+    monkeypatch.setattr(scryfall, "get_all_printings", lambda name: printings)
+
+    nf, ff = get_cheapest_prices("Growing Rites of Itlimoc")
+    assert nf == 7.80
+    assert ff == 7.82

@@ -62,6 +62,11 @@ def _extract_prices(card: dict) -> tuple[Optional[float], Optional[float]]:
     """
     Extract (nonfoil_price, foil_price) from a Scryfall card object.
     Falls back to card_faces[0] if top-level prices are both null (DFC handling).
+
+    Invariant: callers only pass printings that passed _printing_matches(), so
+    the requested card is always either the whole card or its FRONT face —
+    making card_faces[0] the correct face to read. If _printing_matches is ever
+    changed to also accept back-face matches, this fallback must be revisited.
     """
     prices = card.get("prices", {})
 
