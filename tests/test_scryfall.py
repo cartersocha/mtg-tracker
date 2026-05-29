@@ -1,7 +1,18 @@
 # tests/test_scryfall.py
 """Unit tests for scryfall printing-matching (no network)."""
+import pytest
+
 import scryfall
 from scryfall import _printing_matches, get_cheapest_prices
+
+
+@pytest.fixture
+def stub_printings(monkeypatch):
+    """Stub out Scryfall network calls so get_cheapest_prices runs offline."""
+    def _stub(printings):
+        monkeypatch.setattr(scryfall, "_get", lambda *a, **k: {})
+        monkeypatch.setattr(scryfall, "get_all_printings", lambda name: printings)
+    return _stub
 
 
 def test_standalone_card_matches():
@@ -53,14 +64,9 @@ def test_unrelated_card_excluded():
     assert _printing_matches(card, "Reanimate") is False
 
 
-def test_get_cheapest_prices_excludes_back_face_dfc(monkeypatch):
-    """End-to-end: a cheaper back-face DFC must NOT pull down the cheapest price.
-
-    This locks in the real bug symptom: searching "Reanimate" returns both the
-    standalone sorcery ($7.46) and "Grave Researcher // Reanimate" ($3.16, the
-    DFC). The DFC must be excluded so the reported cheapest is the real card.
-    """
-    printings = [
+def test_get_cheapest_prices_excludes_back_face_dfc(stub_printings):
+    """A cheaper back-face DFC must NOT pull down the cheapest price."""
+    stub_printings([
         {"name": "Reanimate", "prices": {"usd": "7.46", "usd_foil": "13.34"}},
         {  # Secrets of Strixhaven DFC — Reanimate is the BACK face
             "name": "Grave Researcher // Reanimate",
@@ -70,19 +76,15 @@ def test_get_cheapest_prices_excludes_back_face_dfc(monkeypatch):
                 {"name": "Reanimate", "prices": {}},
             ],
         },
-    ]
-    # Stub network: name-resolution check and printing fetch
-    monkeypatch.setattr(scryfall, "_get", lambda *a, **k: {})
-    monkeypatch.setattr(scryfall, "get_all_printings", lambda name: printings)
-
+    ])
     nf, ff = get_cheapest_prices("Reanimate")
     assert nf == 7.46  # NOT 3.16 — the DFC was excluded
     assert ff == 13.34  # NOT 4.32
 
 
-def test_get_cheapest_prices_front_face_dfc_included(monkeypatch):
+def test_get_cheapest_prices_front_face_dfc_included(stub_printings):
     """Front-face DFC tracking still resolves (Growing Rites of Itlimoc)."""
-    printings = [
+    stub_printings([
         {
             "name": "Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun",
             "prices": {"usd": "7.80", "usd_foil": "7.82"},
@@ -91,10 +93,7 @@ def test_get_cheapest_prices_front_face_dfc_included(monkeypatch):
                 {"name": "Itlimoc, Cradle of the Sun"},
             ],
         }
-    ]
-    monkeypatch.setattr(scryfall, "_get", lambda *a, **k: {})
-    monkeypatch.setattr(scryfall, "get_all_printings", lambda name: printings)
-
+    ])
     nf, ff = get_cheapest_prices("Growing Rites of Itlimoc")
     assert nf == 7.80
     assert ff == 7.82

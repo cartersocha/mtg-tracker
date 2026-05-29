@@ -36,37 +36,26 @@ def _get(url: str, params: Optional[dict] = None) -> dict:
 
 def _printing_matches(card: dict, card_name: str) -> bool:
     """
-    True if this Scryfall printing actually IS the requested card, not merely a
-    multi-face card that happens to share a face name.
+    True if this Scryfall printing actually IS the requested card, not just a
+    multi-face card that shares a face name.
 
-    Scryfall's exact-name search (!"Reanimate") matches any card with a *face*
-    named "Reanimate" — including DFCs like "Grave Researcher // Reanimate"
-    (Secrets of Strixhaven) where Reanimate is the BACK face. Those are different
-    products with their own (cheaper) combined-card price, so they must be excluded
-    or they corrupt the cheapest-price calculation.
-
-    We accept a printing when:
-      - its full name equals card_name (standalone card / true reprint), OR
-      - card_name is its FRONT face (legit front-face tracking, e.g.
-        "Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun").
+    Scryfall's !"Name" search also matches DFCs where Name is the BACK face
+    (e.g. "Grave Researcher // Reanimate"); those are different products and
+    must be excluded. Accept a printing when its full name equals card_name
+    (standalone/reprint) or card_name is its FRONT face (card_faces[0]).
     """
     if card.get("name") == card_name:
         return True
     faces = card.get("card_faces")
-    if faces and faces[0].get("name") == card_name:
-        return True
-    return False
+    return bool(faces) and faces[0].get("name") == card_name
 
 
 def _extract_prices(card: dict) -> tuple[Optional[float], Optional[float]]:
     """
     Extract (nonfoil_price, foil_price) from a Scryfall card object.
     Falls back to card_faces[0] if top-level prices are both null (DFC handling).
-
-    Invariant: callers only pass printings that passed _printing_matches(), so
-    the requested card is always either the whole card or its FRONT face —
-    making card_faces[0] the correct face to read. If _printing_matches is ever
-    changed to also accept back-face matches, this fallback must be revisited.
+    Relies on the caller having filtered via _printing_matches(), so the tracked
+    card is always the whole card or its front face (card_faces[0]).
     """
     prices = card.get("prices", {})
 
