@@ -34,6 +34,30 @@ def _get(url: str, params: Optional[dict] = None) -> dict:
     return response.json()
 
 
+def _printing_matches(card: dict, card_name: str) -> bool:
+    """
+    True if this Scryfall printing actually IS the requested card, not merely a
+    multi-face card that happens to share a face name.
+
+    Scryfall's exact-name search (!"Reanimate") matches any card with a *face*
+    named "Reanimate" — including DFCs like "Grave Researcher // Reanimate"
+    (Secrets of Strixhaven) where Reanimate is the BACK face. Those are different
+    products with their own (cheaper) combined-card price, so they must be excluded
+    or they corrupt the cheapest-price calculation.
+
+    We accept a printing when:
+      - its full name equals card_name (standalone card / true reprint), OR
+      - card_name is its FRONT face (legit front-face tracking, e.g.
+        "Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun").
+    """
+    if card.get("name") == card_name:
+        return True
+    faces = card.get("card_faces")
+    if faces and faces[0].get("name") == card_name:
+        return True
+    return False
+
+
 def _extract_prices(card: dict) -> tuple[Optional[float], Optional[float]]:
     """
     Extract (nonfoil_price, foil_price) from a Scryfall card object.
@@ -111,6 +135,10 @@ def get_cheapest_prices(card_name: str) -> tuple[Optional[float], Optional[float
     foil_prices: list[float] = []
 
     for card in printings:
+        # Skip multi-face cards that only share a face name (e.g. the
+        # "Grave Researcher // Reanimate" DFC matching a search for "Reanimate").
+        if not _printing_matches(card, card_name):
+            continue
         nf, ff = _extract_prices(card)
         if nf is not None:
             nonfoil_prices.append(nf)

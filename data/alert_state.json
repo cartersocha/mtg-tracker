@@ -337,16 +337,16 @@
   },
   "Demonic Tutor": {
     "foil": {
-      "manual": 24.41,
-      "near_52w_low": 24.26,
-      "pct_drop": 24.26,
-      "pct_off_52w_high": 24.26
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
     },
     "nonfoil": {
-      "manual": 22.61,
-      "near_52w_low": 22.61,
-      "pct_drop": 22.61,
-      "pct_off_52w_high": 22.61
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
     }
   },
   "Exploration": {
@@ -757,16 +757,16 @@
   },
   "Reanimate": {
     "foil": {
-      "manual": 4.66,
-      "near_52w_low": 4.32,
-      "pct_drop": 4.32,
-      "pct_off_52w_high": 4.32
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
     },
     "nonfoil": {
-      "manual": 3.97,
-      "near_52w_low": 3.16,
-      "pct_drop": 3.16,
-      "pct_off_52w_high": 3.16
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
     }
   },
   "Reconnaissance": {
