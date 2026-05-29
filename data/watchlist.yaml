@@ -122,20 +122,6 @@ cards:
 
   # ─── EXPLORERS OF THE DEEP ────────────────────────────────────────────────
 
-  - name: "Vodalian Hexcatcher"
-    # Research: ~$4 non-foil
-    decks:
-      Explorers: 1
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Lord of Atlantis"
-    # Research: ~$6 non-foil
-    decks:
-      Explorers: 1
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Beast Whisperer"
     # Research: ~$4 non-foil
     decks:
@@ -164,8 +150,9 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Oracle of Mul Daya"
-    # Research: ~$15 non-foil
+  - name: "Merrow Commerce"
+    # Research: ~$13.50 non-foil (Manapool saved-for-later, Lorwyn #72)
+    # Merfolk untap engine — tribal payoff for Hakbal
     decks:
       Explorers: 1
     target_nonfoil: null
@@ -250,13 +237,6 @@ cards:
 
   # ─── AHOY MATEYS ──────────────────────────────────────────────────────────
 
-  - name: "Malcolm, Alluring Scoundrel"
-    # Research: ~$4 non-foil
-    decks:
-      Ahoy: 1
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Glint-Horn Buccaneer"
     # Research: ~$6 non-foil
     # Key combo piece: Glint-Horn + Malcolm = infinite damage
@@ -272,32 +252,10 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Brass's Tunnel-Grinder"
-    # Research: ~$2 non-foil (DFC — front face is tracked)
-    decks:
-      Ahoy: 1
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Ragavan, Nimble Pilferer"
     # Research: ~$48 non-foil (Tier 2 — powerful Grixis value engine)
     decks:
       Ahoy: 2
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Buried Alive"
-    # Research: ~$2 non-foil
-    decks:
-      Ahoy: 1
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Crafty Cutpurse"
-    # Research: ~$3 non-foil
-    # Steals every token an opponent makes on their turn
-    decks:
-      Ahoy: 1
     target_nonfoil: null
     target_foil: null
 
@@ -357,13 +315,6 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Animate Dead"
-    # Research: ~$4 non-foil (no-budget only)
-    decks:
-      Ahoy: 4
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Badlands"
     # Research: ~$200+ non-foil (no-budget only)
     decks:
@@ -401,29 +352,8 @@ cards:
     target_nonfoil: null
     target_foil: null
 
-  - name: "Cathars' Crusade"
-    # Research: ~$4 non-foil
-    decks:
-      Rohan: 1
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Adeline, Resplendent Cathar"
-    # Research: ~$5 non-foil
-    decks:
-      Rohan: 1
-    target_nonfoil: null
-    target_foil: null
-
   - name: "Sword of the Animist"
     # Research: ~$4 non-foil
-    decks:
-      Rohan: 1
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Hero of Bladehold"
-    # Research: ~$7 non-foil
     decks:
       Rohan: 1
     target_nonfoil: null
@@ -459,13 +389,6 @@ cards:
 
   - name: "Flowering of the White Tree"
     # Research: ~$8 non-foil
-    decks:
-      Rohan: 3
-    target_nonfoil: null
-    target_foil: null
-
-  - name: "Scourge of the Throne"
-    # Research: ~$5 non-foil
     decks:
       Rohan: 3
     target_nonfoil: null

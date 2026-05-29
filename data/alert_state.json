@@ -1,0 +1,1010 @@
+{
+  "Adeline, Resplendent Cathar": {
+    "foil": {
+      "manual": 3.8,
+      "near_52w_low": 3.8,
+      "pct_drop": 3.8,
+      "pct_off_52w_high": 3.8
+    },
+    "nonfoil": {
+      "manual": 2.42,
+      "near_52w_low": 2.42,
+      "pct_drop": 2.42,
+      "pct_off_52w_high": 2.42
+    }
+  },
+  "Aggravated Assault": {
+    "foil": {
+      "manual": 29.92,
+      "near_52w_low": 29.92,
+      "pct_drop": 29.92,
+      "pct_off_52w_high": 29.92
+    },
+    "nonfoil": {
+      "manual": 27.21,
+      "near_52w_low": 27.21,
+      "pct_drop": 27.21,
+      "pct_off_52w_high": 27.21
+    }
+  },
+  "Akroma's Will": {
+    "foil": {
+      "manual": 17.38,
+      "near_52w_low": 17.38,
+      "pct_drop": 17.38,
+      "pct_off_52w_high": 17.38
+    },
+    "nonfoil": {
+      "manual": 14.28,
+      "near_52w_low": 14.28,
+      "pct_drop": 14.28,
+      "pct_off_52w_high": 14.28
+    }
+  },
+  "Ancient Tomb": {
+    "foil": {
+      "manual": 125.87,
+      "near_52w_low": 125.87,
+      "pct_drop": 125.87,
+      "pct_off_52w_high": 125.87
+    },
+    "nonfoil": {
+      "manual": 115.34,
+      "near_52w_low": 115.34,
+      "pct_drop": 115.34,
+      "pct_off_52w_high": 115.34
+    }
+  },
+  "Animate Dead": {
+    "foil": {
+      "manual": 11.83,
+      "near_52w_low": 11.83,
+      "pct_drop": 11.83,
+      "pct_off_52w_high": 11.83
+    },
+    "nonfoil": {
+      "manual": 4.72,
+      "near_52w_low": 4.72,
+      "pct_drop": 4.72,
+      "pct_off_52w_high": 4.72
+    }
+  },
+  "Anointed Procession": {
+    "foil": {
+      "manual": 73.92,
+      "near_52w_low": 73.92,
+      "pct_drop": 73.92,
+      "pct_off_52w_high": 73.92
+    },
+    "nonfoil": {
+      "manual": 57.03,
+      "near_52w_low": 57.03,
+      "pct_drop": 57.03,
+      "pct_off_52w_high": 57.03
+    }
+  },
+  "Arid Mesa": {
+    "foil": {
+      "manual": 32.85,
+      "near_52w_low": 32.85,
+      "pct_drop": 32.85,
+      "pct_off_52w_high": 32.85
+    },
+    "nonfoil": {
+      "manual": 33.08,
+      "near_52w_low": 33.08,
+      "pct_drop": 33.08,
+      "pct_off_52w_high": 33.08
+    }
+  },
+  "Ashnod's Altar": {
+    "foil": {
+      "manual": 15.98,
+      "near_52w_low": 15.98,
+      "pct_drop": 15.98,
+      "pct_off_52w_high": 15.98
+    },
+    "nonfoil": {
+      "manual": 13.19,
+      "near_52w_low": 13.19,
+      "pct_drop": 13.19,
+      "pct_off_52w_high": 13.19
+    }
+  },
+  "Aurelia, the Warleader": {
+    "foil": {
+      "manual": 17.97,
+      "near_52w_low": 17.97,
+      "pct_drop": 17.97,
+      "pct_off_52w_high": 17.97
+    },
+    "nonfoil": {
+      "manual": 6.42,
+      "near_52w_low": 6.42,
+      "pct_drop": 6.42,
+      "pct_off_52w_high": 6.42
+    }
+  },
+  "Badlands": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 492.66,
+      "near_52w_low": 492.66,
+      "pct_drop": 492.66,
+      "pct_off_52w_high": 492.66
+    }
+  },
+  "Beast Whisperer": {
+    "foil": {
+      "manual": 5.66,
+      "near_52w_low": 5.66,
+      "pct_drop": 5.66,
+      "pct_off_52w_high": 5.66
+    },
+    "nonfoil": {
+      "manual": 6.42,
+      "near_52w_low": 6.42,
+      "pct_drop": 6.42,
+      "pct_off_52w_high": 6.42
+    }
+  },
+  "Bloodstained Mire": {
+    "foil": {
+      "manual": 18.57,
+      "near_52w_low": 18.57,
+      "pct_drop": 18.57,
+      "pct_off_52w_high": 18.57
+    },
+    "nonfoil": {
+      "manual": 17.09,
+      "near_52w_low": 17.09,
+      "pct_drop": 17.09,
+      "pct_off_52w_high": 17.09
+    }
+  },
+  "Boromir, Warden of the Tower": {
+    "foil": {
+      "manual": 5.09,
+      "near_52w_low": 5.09,
+      "pct_drop": 5.09,
+      "pct_off_52w_high": 5.09
+    },
+    "nonfoil": {
+      "manual": 5.54,
+      "near_52w_low": 5.54,
+      "pct_drop": 5.54,
+      "pct_off_52w_high": 5.54
+    }
+  },
+  "Brass's Tunnel-Grinder": {
+    "foil": {
+      "manual": 5.05,
+      "near_52w_low": 5.05,
+      "pct_drop": 5.05,
+      "pct_off_52w_high": 5.05
+    },
+    "nonfoil": {
+      "manual": 3.23,
+      "near_52w_low": 3.23,
+      "pct_drop": 3.23,
+      "pct_off_52w_high": 3.23
+    }
+  },
+  "Buried Alive": {
+    "foil": {
+      "manual": 1.67,
+      "near_52w_low": 1.67,
+      "pct_drop": 1.67,
+      "pct_off_52w_high": 1.67
+    },
+    "nonfoil": {
+      "manual": 0.79,
+      "near_52w_low": 0.79,
+      "pct_drop": 0.79,
+      "pct_off_52w_high": 0.79
+    }
+  },
+  "Cathars' Crusade": {
+    "foil": {
+      "manual": 6.27,
+      "near_52w_low": 6.27,
+      "pct_drop": 6.27,
+      "pct_off_52w_high": 6.27
+    },
+    "nonfoil": {
+      "manual": 4.98,
+      "near_52w_low": 4.98,
+      "pct_drop": 4.98,
+      "pct_off_52w_high": 4.98
+    }
+  },
+  "Cavern of Souls": {
+    "foil": {
+      "manual": 47.43,
+      "near_52w_low": 47.43,
+      "pct_drop": 47.43,
+      "pct_off_52w_high": 47.43
+    },
+    "nonfoil": {
+      "manual": 46.96,
+      "near_52w_low": 46.96,
+      "pct_drop": 46.96,
+      "pct_off_52w_high": 46.96
+    }
+  },
+  "Champion of the Parish": {
+    "foil": {
+      "manual": 9.21,
+      "near_52w_low": 9.21,
+      "pct_drop": 9.21,
+      "pct_off_52w_high": 9.21
+    },
+    "nonfoil": {
+      "manual": 0.82,
+      "near_52w_low": 0.82,
+      "pct_drop": 0.82,
+      "pct_off_52w_high": 0.82
+    }
+  },
+  "Coat of Arms": {
+    "foil": {
+      "manual": 16.48,
+      "near_52w_low": 16.48,
+      "pct_drop": 16.48,
+      "pct_off_52w_high": 16.48
+    },
+    "nonfoil": {
+      "manual": 15.4,
+      "near_52w_low": 15.4,
+      "pct_drop": 15.4,
+      "pct_off_52w_high": 15.4
+    }
+  },
+  "Concordant Crossroads": {
+    "foil": {
+      "manual": 23.21,
+      "near_52w_low": 23.21,
+      "pct_drop": 23.21,
+      "pct_off_52w_high": 23.21
+    },
+    "nonfoil": {
+      "manual": 20.0,
+      "near_52w_low": 20.0,
+      "pct_drop": 20.0,
+      "pct_off_52w_high": 20.0
+    }
+  },
+  "Crafty Cutpurse": {
+    "foil": {
+      "manual": 1.34,
+      "near_52w_low": 1.34,
+      "pct_drop": 1.34,
+      "pct_off_52w_high": 1.34
+    },
+    "nonfoil": {
+      "manual": 0.31,
+      "near_52w_low": 0.31,
+      "pct_drop": 0.31,
+      "pct_off_52w_high": 0.31
+    }
+  },
+  "Cyclonic Rift": {
+    "foil": {
+      "manual": 34.32,
+      "near_52w_low": 34.32,
+      "pct_drop": 34.32,
+      "pct_off_52w_high": 34.32
+    },
+    "nonfoil": {
+      "manual": 30.49,
+      "near_52w_low": 30.49,
+      "pct_drop": 30.49,
+      "pct_off_52w_high": 30.49
+    }
+  },
+  "Deflecting Swat": {
+    "foil": {
+      "manual": 74.57,
+      "near_52w_low": 74.57,
+      "pct_drop": 74.57,
+      "pct_off_52w_high": 74.57
+    },
+    "nonfoil": {
+      "manual": 61.2,
+      "near_52w_low": 61.2,
+      "pct_drop": 61.2,
+      "pct_off_52w_high": 61.2
+    }
+  },
+  "Demonic Consultation": {
+    "foil": {
+      "manual": 10.74,
+      "near_52w_low": 10.74,
+      "pct_drop": 10.74,
+      "pct_off_52w_high": 10.74
+    },
+    "nonfoil": {
+      "manual": 5.44,
+      "near_52w_low": 5.44,
+      "pct_drop": 5.44,
+      "pct_off_52w_high": 5.44
+    }
+  },
+  "Demonic Tutor": {
+    "foil": {
+      "manual": 24.41,
+      "near_52w_low": 24.41,
+      "pct_drop": 24.41,
+      "pct_off_52w_high": 24.41
+    },
+    "nonfoil": {
+      "manual": 22.61,
+      "near_52w_low": 22.61,
+      "pct_drop": 22.61,
+      "pct_off_52w_high": 22.61
+    }
+  },
+  "Exploration": {
+    "foil": {
+      "manual": 32.01,
+      "near_52w_low": 32.01,
+      "pct_drop": 32.01,
+      "pct_off_52w_high": 32.01
+    },
+    "nonfoil": {
+      "manual": 29.37,
+      "near_52w_low": 29.37,
+      "pct_drop": 29.37,
+      "pct_off_52w_high": 29.37
+    }
+  },
+  "Fierce Guardianship": {
+    "foil": {
+      "manual": 66.88,
+      "near_52w_low": 66.88,
+      "pct_drop": 66.88,
+      "pct_off_52w_high": 66.88
+    },
+    "nonfoil": {
+      "manual": 49.35,
+      "near_52w_low": 49.35,
+      "pct_drop": 49.35,
+      "pct_off_52w_high": 49.35
+    }
+  },
+  "Flooded Strand": {
+    "foil": {
+      "manual": 15.94,
+      "near_52w_low": 15.94,
+      "pct_drop": 15.94,
+      "pct_off_52w_high": 15.94
+    },
+    "nonfoil": {
+      "manual": 15.91,
+      "near_52w_low": 15.91,
+      "pct_drop": 15.91,
+      "pct_off_52w_high": 15.91
+    }
+  },
+  "Flowering of the White Tree": {
+    "foil": {
+      "manual": 9.85,
+      "near_52w_low": 9.85,
+      "pct_drop": 9.85,
+      "pct_off_52w_high": 9.85
+    },
+    "nonfoil": {
+      "manual": 9.29,
+      "near_52w_low": 9.29,
+      "pct_drop": 9.29,
+      "pct_off_52w_high": 9.29
+    }
+  },
+  "Force of Will": {
+    "foil": {
+      "manual": 76.65,
+      "near_52w_low": 76.65,
+      "pct_drop": 76.65,
+      "pct_off_52w_high": 76.65
+    },
+    "nonfoil": {
+      "manual": 65.56,
+      "near_52w_low": 65.56,
+      "pct_drop": 65.56,
+      "pct_off_52w_high": 65.56
+    }
+  },
+  "Gaea's Cradle": {
+    "foil": {
+      "manual": 2949.0,
+      "near_52w_low": 2949.0,
+      "pct_drop": 2949.0,
+      "pct_off_52w_high": 2949.0
+    },
+    "nonfoil": {
+      "manual": 1417.27,
+      "near_52w_low": 1417.27,
+      "pct_drop": 1417.27,
+      "pct_off_52w_high": 1417.27
+    }
+  },
+  "Glint-Horn Buccaneer": {
+    "foil": {
+      "manual": 12.13,
+      "near_52w_low": 12.13,
+      "pct_drop": 12.13,
+      "pct_off_52w_high": 12.13
+    },
+    "nonfoil": {
+      "manual": 6.47,
+      "near_52w_low": 6.47,
+      "pct_drop": 6.47,
+      "pct_off_52w_high": 6.47
+    }
+  },
+  "Growing Rites of Itlimoc": {
+    "foil": {
+      "manual": 7.78,
+      "near_52w_low": 7.78,
+      "pct_drop": 7.78,
+      "pct_off_52w_high": 7.78
+    },
+    "nonfoil": {
+      "manual": 7.62,
+      "near_52w_low": 7.62,
+      "pct_drop": 7.62,
+      "pct_off_52w_high": 7.62
+    }
+  },
+  "Hallowed Fountain": {
+    "foil": {
+      "manual": 7.92,
+      "near_52w_low": 7.92,
+      "pct_drop": 7.92,
+      "pct_off_52w_high": 7.92
+    },
+    "nonfoil": {
+      "manual": 7.74,
+      "near_52w_low": 7.74,
+      "pct_drop": 7.74,
+      "pct_off_52w_high": 7.74
+    }
+  },
+  "Hero of Bladehold": {
+    "foil": {
+      "manual": 6.51,
+      "near_52w_low": 6.51,
+      "pct_drop": 6.51,
+      "pct_off_52w_high": 6.51
+    },
+    "nonfoil": {
+      "manual": 0.8,
+      "near_52w_low": 0.8,
+      "pct_drop": 0.8,
+      "pct_off_52w_high": 0.8
+    }
+  },
+  "Heroic Intervention": {
+    "foil": {
+      "manual": 12.0,
+      "near_52w_low": 12.0,
+      "pct_drop": 12.0,
+      "pct_off_52w_high": 12.0
+    },
+    "nonfoil": {
+      "manual": 13.15,
+      "near_52w_low": 13.15,
+      "pct_drop": 13.15,
+      "pct_off_52w_high": 13.15
+    }
+  },
+  "Imperial Seal": {
+    "foil": {
+      "manual": 163.45,
+      "near_52w_low": 163.45,
+      "pct_drop": 163.45,
+      "pct_off_52w_high": 163.45
+    },
+    "nonfoil": {
+      "manual": 158.89,
+      "near_52w_low": 158.89,
+      "pct_drop": 158.89,
+      "pct_off_52w_high": 158.89
+    }
+  },
+  "Intruder Alarm": {
+    "foil": {
+      "manual": 2.37,
+      "near_52w_low": 2.37,
+      "pct_drop": 2.37,
+      "pct_off_52w_high": 2.37
+    },
+    "nonfoil": {
+      "manual": 2.39,
+      "near_52w_low": 2.39,
+      "pct_drop": 2.39,
+      "pct_off_52w_high": 2.39
+    }
+  },
+  "Jeweled Lotus": {
+    "foil": {
+      "manual": 86.69,
+      "near_52w_low": 86.69,
+      "pct_drop": 86.69,
+      "pct_off_52w_high": 86.69
+    },
+    "nonfoil": {
+      "manual": 44.65,
+      "near_52w_low": 44.65,
+      "pct_drop": 44.65,
+      "pct_off_52w_high": 44.65
+    }
+  },
+  "Kindred Discovery": {
+    "foil": {
+      "manual": 10.31,
+      "near_52w_low": 10.31,
+      "pct_drop": 10.31,
+      "pct_off_52w_high": 10.31
+    },
+    "nonfoil": {
+      "manual": 12.95,
+      "near_52w_low": 12.95,
+      "pct_drop": 12.95,
+      "pct_off_52w_high": 12.95
+    }
+  },
+  "Loran of the Third Path": {
+    "foil": {
+      "manual": 3.61,
+      "near_52w_low": 3.61,
+      "pct_drop": 3.61,
+      "pct_off_52w_high": 3.61
+    },
+    "nonfoil": {
+      "manual": 3.58,
+      "near_52w_low": 3.58,
+      "pct_drop": 3.58,
+      "pct_off_52w_high": 3.58
+    }
+  },
+  "Lord of Atlantis": {
+    "foil": {
+      "manual": 10.93,
+      "near_52w_low": 10.93,
+      "pct_drop": 10.93,
+      "pct_off_52w_high": 10.93
+    },
+    "nonfoil": {
+      "manual": 5.35,
+      "near_52w_low": 5.35,
+      "pct_drop": 5.35,
+      "pct_off_52w_high": 5.35
+    }
+  },
+  "Malcolm, Alluring Scoundrel": {
+    "foil": {
+      "manual": 2.65,
+      "near_52w_low": 2.65,
+      "pct_drop": 2.65,
+      "pct_off_52w_high": 2.65
+    },
+    "nonfoil": {
+      "manual": 2.1,
+      "near_52w_low": 2.1,
+      "pct_drop": 2.1,
+      "pct_off_52w_high": 2.1
+    }
+  },
+  "Mana Crypt": {
+    "foil": {
+      "manual": 64.12,
+      "near_52w_low": 64.12,
+      "pct_drop": 64.12,
+      "pct_off_52w_high": 64.12
+    },
+    "nonfoil": {
+      "manual": 40.53,
+      "near_52w_low": 40.53,
+      "pct_drop": 40.53,
+      "pct_off_52w_high": 40.53
+    }
+  },
+  "Misty Rainforest": {
+    "foil": {
+      "manual": 31.5,
+      "near_52w_low": 31.5,
+      "pct_drop": 31.5,
+      "pct_off_52w_high": 31.5
+    },
+    "nonfoil": {
+      "manual": 33.52,
+      "near_52w_low": 33.52,
+      "pct_drop": 33.52,
+      "pct_off_52w_high": 33.52
+    }
+  },
+  "Necromancy": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 16.94,
+      "near_52w_low": 16.94,
+      "pct_drop": 16.94,
+      "pct_off_52w_high": 16.94
+    }
+  },
+  "Oracle of Mul Daya": {
+    "foil": {
+      "manual": 7.53,
+      "near_52w_low": 7.53,
+      "pct_drop": 7.53,
+      "pct_off_52w_high": 7.53
+    },
+    "nonfoil": {
+      "manual": 2.59,
+      "near_52w_low": 2.59,
+      "pct_drop": 2.59,
+      "pct_off_52w_high": 2.59
+    }
+  },
+  "Otawara, Soaring City": {
+    "foil": {
+      "manual": 27.66,
+      "near_52w_low": 27.66,
+      "pct_drop": 27.66,
+      "pct_off_52w_high": 27.66
+    },
+    "nonfoil": {
+      "manual": 28.42,
+      "near_52w_low": 28.42,
+      "pct_drop": 28.42,
+      "pct_off_52w_high": 28.42
+    }
+  },
+  "Pact of Negation": {
+    "foil": {
+      "manual": 34.15,
+      "near_52w_low": 34.15,
+      "pct_drop": 34.15,
+      "pct_off_52w_high": 34.15
+    },
+    "nonfoil": {
+      "manual": 15.64,
+      "near_52w_low": 15.64,
+      "pct_drop": 15.64,
+      "pct_off_52w_high": 15.64
+    }
+  },
+  "Phyrexian Altar": {
+    "foil": {
+      "manual": 54.4,
+      "near_52w_low": 54.4,
+      "pct_drop": 54.4,
+      "pct_off_52w_high": 54.4
+    },
+    "nonfoil": {
+      "manual": 52.53,
+      "near_52w_low": 52.53,
+      "pct_drop": 52.53,
+      "pct_off_52w_high": 52.53
+    }
+  },
+  "Plateau": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 344.09,
+      "near_52w_low": 344.09,
+      "pct_drop": 344.09,
+      "pct_off_52w_high": 344.09
+    }
+  },
+  "Polluted Delta": {
+    "foil": {
+      "manual": 21.0,
+      "near_52w_low": 21.0,
+      "pct_drop": 21.0,
+      "pct_off_52w_high": 21.0
+    },
+    "nonfoil": {
+      "manual": 19.16,
+      "near_52w_low": 19.16,
+      "pct_drop": 19.16,
+      "pct_off_52w_high": 19.16
+    }
+  },
+  "Ragavan, Nimble Pilferer": {
+    "foil": {
+      "manual": 52.07,
+      "near_52w_low": 52.07,
+      "pct_drop": 52.07,
+      "pct_off_52w_high": 52.07
+    },
+    "nonfoil": {
+      "manual": 44.19,
+      "near_52w_low": 44.19,
+      "pct_drop": 44.19,
+      "pct_off_52w_high": 44.19
+    }
+  },
+  "Reanimate": {
+    "foil": {
+      "manual": 4.66,
+      "near_52w_low": 4.66,
+      "pct_drop": 4.66,
+      "pct_off_52w_high": 4.66
+    },
+    "nonfoil": {
+      "manual": 3.97,
+      "near_52w_low": 3.97,
+      "pct_drop": 3.97,
+      "pct_off_52w_high": 3.97
+    }
+  },
+  "Reconnaissance": {
+    "foil": {
+      "manual": 5.67,
+      "near_52w_low": 5.67,
+      "pct_drop": 5.67,
+      "pct_off_52w_high": 5.67
+    },
+    "nonfoil": {
+      "manual": 4.93,
+      "near_52w_low": 4.93,
+      "pct_drop": 4.93,
+      "pct_off_52w_high": 4.93
+    }
+  },
+  "Roaming Throne": {
+    "foil": {
+      "manual": 51.58,
+      "near_52w_low": 51.58,
+      "pct_drop": 51.58,
+      "pct_off_52w_high": 51.58
+    },
+    "nonfoil": {
+      "manual": 48.59,
+      "near_52w_low": 48.59,
+      "pct_drop": 48.59,
+      "pct_off_52w_high": 48.59
+    }
+  },
+  "Sacred Foundry": {
+    "foil": {
+      "manual": 10.13,
+      "near_52w_low": 10.13,
+      "pct_drop": 10.13,
+      "pct_off_52w_high": 10.13
+    },
+    "nonfoil": {
+      "manual": 10.77,
+      "near_52w_low": 10.77,
+      "pct_drop": 10.77,
+      "pct_off_52w_high": 10.77
+    }
+  },
+  "Scalding Tarn": {
+    "foil": {
+      "manual": 34.3,
+      "near_52w_low": 34.3,
+      "pct_drop": 34.3,
+      "pct_off_52w_high": 34.3
+    },
+    "nonfoil": {
+      "manual": 36.23,
+      "near_52w_low": 36.23,
+      "pct_drop": 36.23,
+      "pct_off_52w_high": 36.23
+    }
+  },
+  "Scourge of the Throne": {
+    "foil": {
+      "manual": 0.92,
+      "near_52w_low": 0.92,
+      "pct_drop": 0.92,
+      "pct_off_52w_high": 0.92
+    },
+    "nonfoil": {
+      "manual": 0.35,
+      "near_52w_low": 0.35,
+      "pct_drop": 0.35,
+      "pct_off_52w_high": 0.35
+    }
+  },
+  "Seedborn Muse": {
+    "foil": {
+      "manual": 30.06,
+      "near_52w_low": 30.06,
+      "pct_drop": 30.06,
+      "pct_off_52w_high": 30.06
+    },
+    "nonfoil": {
+      "manual": 12.18,
+      "near_52w_low": 12.18,
+      "pct_drop": 12.18,
+      "pct_off_52w_high": 12.18
+    }
+  },
+  "Skullclamp": {
+    "foil": {
+      "manual": 12.42,
+      "near_52w_low": 12.42,
+      "pct_drop": 12.42,
+      "pct_off_52w_high": 12.42
+    },
+    "nonfoil": {
+      "manual": 5.15,
+      "near_52w_low": 5.15,
+      "pct_drop": 5.15,
+      "pct_off_52w_high": 5.15
+    }
+  },
+  "Smothering Tithe": {
+    "foil": {
+      "manual": 46.5,
+      "near_52w_low": 46.5,
+      "pct_drop": 46.5,
+      "pct_off_52w_high": 46.5
+    },
+    "nonfoil": {
+      "manual": 51.52,
+      "near_52w_low": 51.52,
+      "pct_drop": 51.52,
+      "pct_off_52w_high": 51.52
+    }
+  },
+  "Strionic Resonator": {
+    "foil": {
+      "manual": 12.49,
+      "near_52w_low": 12.49,
+      "pct_drop": 12.49,
+      "pct_off_52w_high": 12.49
+    },
+    "nonfoil": {
+      "manual": 7.22,
+      "near_52w_low": 7.22,
+      "pct_drop": 7.22,
+      "pct_off_52w_high": 7.22
+    }
+  },
+  "Swan Song": {
+    "foil": {
+      "manual": 38.77,
+      "near_52w_low": 38.77,
+      "pct_drop": 38.77,
+      "pct_off_52w_high": 38.77
+    },
+    "nonfoil": {
+      "manual": 8.33,
+      "near_52w_low": 8.33,
+      "pct_drop": 8.33,
+      "pct_off_52w_high": 8.33
+    }
+  },
+  "Sword of the Animist": {
+    "foil": {
+      "manual": 8.66,
+      "near_52w_low": 8.66,
+      "pct_drop": 8.66,
+      "pct_off_52w_high": 8.66
+    },
+    "nonfoil": {
+      "manual": 5.57,
+      "near_52w_low": 5.57,
+      "pct_drop": 5.57,
+      "pct_off_52w_high": 5.57
+    }
+  },
+  "Thassa's Oracle": {
+    "foil": {
+      "manual": 23.5,
+      "near_52w_low": 23.5,
+      "pct_drop": 23.5,
+      "pct_off_52w_high": 23.5
+    },
+    "nonfoil": {
+      "manual": 20.11,
+      "near_52w_low": 20.11,
+      "pct_drop": 20.11,
+      "pct_off_52w_high": 20.11
+    }
+  },
+  "Titan of Littjara": {
+    "foil": {
+      "manual": 8.25,
+      "near_52w_low": 8.25,
+      "pct_drop": 8.25,
+      "pct_off_52w_high": 8.25
+    },
+    "nonfoil": {
+      "manual": 6.01,
+      "near_52w_low": 6.01,
+      "pct_drop": 6.01,
+      "pct_off_52w_high": 6.01
+    }
+  },
+  "Tropical Island": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 559.01,
+      "near_52w_low": 559.01,
+      "pct_drop": 559.01,
+      "pct_off_52w_high": 559.01
+    }
+  },
+  "Underground Sea": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 931.96,
+      "near_52w_low": 931.96,
+      "pct_drop": 931.96,
+      "pct_off_52w_high": 931.96
+    }
+  },
+  "Vampiric Tutor": {
+    "foil": {
+      "manual": 64.32,
+      "near_52w_low": 64.32,
+      "pct_drop": 64.32,
+      "pct_off_52w_high": 64.32
+    },
+    "nonfoil": {
+      "manual": 60.18,
+      "near_52w_low": 60.18,
+      "pct_drop": 60.18,
+      "pct_off_52w_high": 60.18
+    }
+  },
+  "Vodalian Hexcatcher": {
+    "foil": {
+      "manual": 3.69,
+      "near_52w_low": 3.69,
+      "pct_drop": 3.69,
+      "pct_off_52w_high": 3.69
+    },
+    "nonfoil": {
+      "manual": 3.49,
+      "near_52w_low": 3.49,
+      "pct_drop": 3.49,
+      "pct_off_52w_high": 3.49
+    }
+  },
+  "Volcanic Island": {
+    "foil": {
+      "manual": null,
+      "near_52w_low": null,
+      "pct_drop": null,
+      "pct_off_52w_high": null
+    },
+    "nonfoil": {
+      "manual": 778.31,
+      "near_52w_low": 778.31,
+      "pct_drop": 778.31,
+      "pct_off_52w_high": 778.31
+    }
+  }
+}
